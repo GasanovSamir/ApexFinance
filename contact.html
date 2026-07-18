@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Əlaqə | Apex MMC</title>
+<meta name="description" content="Apex MMC ilə əlaqə saxlayın — pulsuz məsləhət üçün sorğu göndərin və ya birbaşa zəng edin.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0F2439"/><path d="M17 20h30M17 32h30M17 44h20" stroke="#EFF0E9" stroke-width="3" stroke-linecap="round"/><circle cx="47" cy="44" r="7" fill="#B8873A"/><path d="M44.2 44l2 2 4-4.2" stroke="#0F2439" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Apex MMC<small>Mühasibatlıq &amp; Maliyyə</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.home">Ana səhifə</a>
+      <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      <a href="services.html" data-i18n="nav.services">Xidmətlər</a>
+      <a href="calculators.html" data-i18n="nav.calculators">Kalkulyatorlar</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Qiymətlər</a>
+      <a href="blog.html" data-i18n="nav.blog">Bloq</a>
+      <a href="contact.html" data-i18n="nav.contact" class="active">Əlaqə</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" aria-haspopup="true"><span data-lang-label>AZ</span>
+          <svg width="10" height="10" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button data-lang="az" aria-current="true">Azərbaycanca</button>
+          <button data-lang="en">English</button>
+          <button data-lang="ru">Русский</button>
+        </div>
+      </div>
+      <a href="portal.html" class="btn btn-ghost btn-sm" data-i18n="nav.portal">Müştəri Portalı</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.cta">Pulsuz məsləhət alın</a>
+      <button class="nav-toggle" aria-label="Menyu">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html">Ana səhifə</a><a href="about.html">Haqqımızda</a><a href="services.html">Xidmətlər</a>
+    <a href="calculators.html">Kalkulyatorlar</a><a href="pricing.html">Qiymətlər</a><a href="blog.html">Bloq</a>
+    <a href="contact.html">Əlaqə</a><a href="portal.html">Müştəri Portalı</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Ana səhifə</a> / Əlaqə</div>
+    <span class="eyebrow">Danışaq</span>
+    <h1>Pulsuz maliyyə auditinə yazılın</h1>
+    <p class="lede" style="max-width:600px">Formu doldurun, 24 saat ərzində geri dönüş edək. Təcili məsələ üçün birbaşa zəng edə bilərsiniz.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2" style="gap:56px;align-items:start">
+
+    <div class="reveal">
+      <div class="card">
+        <h3 style="margin-bottom:22px">Sorğu formu</h3>
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="c-name">Ad Soyad</label>
+              <input type="text" id="c-name" name="name" required placeholder="Adınızı daxil edin">
+            </div>
+            <div class="field">
+              <label for="c-company">Şirkət adı</label>
+              <input type="text" id="c-company" name="company" placeholder="Şirkətinizin adı">
+            </div>
+            <div class="field">
+              <label for="c-phone">Telefon</label>
+              <input type="tel" id="c-phone" name="phone" required placeholder="+994 XX XXX XX XX">
+            </div>
+            <div class="field">
+              <label for="c-email">E-poçt</label>
+              <input type="email" id="c-email" name="email" required placeholder="siz@sirket.az">
+            </div>
+            <div class="field full">
+              <label for="c-service">Maraqlandığınız xidmət</label>
+              <select id="c-service" name="service">
+                <option>Mühasibat uçotu</option>
+                <option>Vergi bəyannaməsi</option>
+                <option>Əmək haqqı &amp; HR uçotu</option>
+                <option>Audit hazırlığı</option>
+                <option>CFO konsaltinq</option>
+                <option>Şirkət qeydiyyatı</option>
+                <option>Digər / hələ qərar verməmişəm</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="c-message">Mesajınız <span class="hint">(könüllü)</span></label>
+              <textarea id="c-message" name="message" placeholder="Biznesiniz və ehtiyaclarınız haqqında qısa məlumat"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:22px" data-i18n="btn.sendRequest">Sorğu göndər</button>
+          <p class="form-note">Formu göndərməklə <a href="#" style="text-decoration:underline">Məxfilik Siyasətimizlə</a> razılaşmış olursunuz.</p>
+          <div class="form-success" id="contact-success">✓ Təşəkkürlər! Sorğunuz qəbul olundu, komandamız 24 saat ərzində sizinlə əlaqə saxlayacaq.</div>
+        </form>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="card" style="margin-bottom:24px">
+        <h3 style="margin-bottom:18px">Əlaqə məlumatları</h3>
+        <div style="display:flex;flex-direction:column;gap:16px;font-size:14.5px">
+          <div><b style="display:block;color:var(--ink);font-size:13px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em">Ünvan</b>Nizami küç. 90, Baku Business Center, 12-ci mərtəbə, Bakı, AZ1010</div>
+          <div><b style="display:block;color:var(--ink);font-size:13px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em">Telefon</b>+994 12 555 04 04 · +994 50 555 04 04</div>
+          <div><b style="display:block;color:var(--ink);font-size:13px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em">E-poçt</b>info@apexmmc.az</div>
+          <div><b style="display:block;color:var(--ink);font-size:13px;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.04em">İş saatları</b>Bazar ertəsi – Cümə: 09:00–18:00</div>
+        </div>
+      </div>
+
+      <div class="card" style="height:220px;padding:0;overflow:hidden;position:relative">
+        <svg width="100%" height="100%" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="220" fill="#E5E7DC"/>
+          <path d="M0 120 C 100 80, 180 160, 400 100" stroke="#D3CDB8" stroke-width="10" fill="none"/>
+          <path d="M0 60 C 140 100, 240 20, 400 60" stroke="#D3CDB8" stroke-width="6" fill="none"/>
+          <circle cx="230" cy="110" r="9" fill="#B8873A"/>
+          <circle cx="230" cy="110" r="16" fill="none" stroke="#B8873A" stroke-width="2" opacity="0.5"/>
+          <text x="20" y="205" font-family="IBM Plex Mono" font-size="11" fill="#5D6B70">Nizami küç. 90, Bakı — xəritə üçün naviqasiya tətbiqinizi açın</text>
+        </svg>
+      </div>
+
+      <div style="margin-top:24px">
+        <h4 style="margin-bottom:14px">Bizi sosial şəbəkələrdə izləyin</h4>
+        <div class="social-row" style="justify-content:flex-start">
+          <a href="#" aria-label="LinkedIn" style="border-color:var(--rule);color:var(--ink)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.22 8.5h4.56V23H.22V8.5zM8.7 8.5h4.37v1.98h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7v8.4h-4.56v-7.45c0-1.78-.03-4.06-2.48-4.06-2.48 0-2.86 1.94-2.86 3.94V23H8.7V8.5z"/></svg></a>
+          <a href="#" aria-label="Instagram" style="border-color:var(--rule);color:var(--ink)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.16.55.55.9 1.11 1.16 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 01-1.16 1.77 4.9 4.9 0 01-1.77 1.16c-.64.25-1.37.42-2.43.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 01-1.77-1.16 4.9 4.9 0 01-1.16-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.16-1.77A4.9 4.9 0 015.46.52c.64-.25 1.37-.42 2.43-.47C8.94.01 9.3 0 12 0zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" aria-label="Facebook" style="border-color:var(--rule);color:var(--ink)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Tez-tez verilən suallar</span>
+      <h2>Əlaqə və əməkdaşlığa başlamaqla bağlı</h2>
+    </div>
+    <div style="max-width:760px">
+      <div class="accordion-item">
+        <button class="accordion-trigger"><span>Görüş üçün ofisə gəlməliyəmmi?</span><span class="plus"></span></button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">Xeyr, ilk görüşü Zoom/Google Meet vasitəsilə və ya ofisimizdə — sizə uyğun formatda keçirə bilərik.</div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger"><span>Sorğu göndərdikdən sonra nə qədər müddətə cavab alacağam?</span><span class="plus"></span></button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">İş saatları ərzində orta cavab müddəti 2-4 saat, maksimum 24 saatdır.</div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger"><span>Region şirkətləri ilə işləyirsinizmi?</span><span class="plus"></span></button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">Bəli, xidmətlərimizin böyük hissəsi tam onlayn formatda göstərilir, ona görə Azərbaycanın istənilən bölgəsindən müştərilərlə işləyirik.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#B8873A"/><path d="M17 20h30M17 32h30M17 44h20" stroke="#0F2439" stroke-width="3" stroke-linecap="round"/></svg>
+          <span>Apex MMC<small>Mühasibatlıq &amp; Maliyyə</small></span>
+        </a>
+        <p data-i18n="footer.tagline">Bakıda 2013-cü ildən fəaliyyət göstərən lisenziyalı mühasibatlıq, audit və vergi konsaltinq şirkəti.</p>
+      </div>
+      <div class="footer-col"><h4 data-i18n="footer.company">Şirkət</h4><ul><li><a href="about.html">Haqqımızda</a></li><li><a href="pricing.html">Qiymətlər</a></li><li><a href="blog.html">Bloq</a></li><li><a href="contact.html">Karyera</a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="footer.services">Xidmətlər</h4><ul><li><a href="services.html">Mühasibat uçotu</a></li><li><a href="services.html">Vergi bəyannaməsi</a></li><li><a href="services.html">Əmək haqqı</a></li><li><a href="services.html">Audit hazırlığı</a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="footer.contactHead">Əlaqə</h4><ul><li>Nizami küç. 90, Baku Business Center, Bakı</li><li>+994 12 555 04 04</li><li>info@apexmmc.az</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Apex MMC. <span data-i18n="footer.rights">Bütün hüquqlar qorunur.</span></span>
+      <span>VÖEN: 1234567890 · Lisenziya No. MF-0472</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Yuxarı qalx">↑</button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

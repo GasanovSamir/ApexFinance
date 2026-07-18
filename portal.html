@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Müştəri Portalı | Apex MMC</title>
+<meta name="description" content="Apex MMC müştəri portalı — hesabatlarınıza, vergi təqviminizə və sənəd mübadiləsinə real vaxtda giriş.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0F2439"/><path d="M17 20h30M17 32h30M17 44h20" stroke="#EFF0E9" stroke-width="3" stroke-linecap="round"/><circle cx="47" cy="44" r="7" fill="#B8873A"/><path d="M44.2 44l2 2 4-4.2" stroke="#0F2439" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Apex MMC<small>Mühasibatlıq &amp; Maliyyə</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.home">Ana səhifə</a>
+      <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      <a href="services.html" data-i18n="nav.services">Xidmətlər</a>
+      <a href="calculators.html" data-i18n="nav.calculators">Kalkulyatorlar</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Qiymətlər</a>
+      <a href="blog.html" data-i18n="nav.blog">Bloq</a>
+      <a href="contact.html" data-i18n="nav.contact">Əlaqə</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" aria-haspopup="true"><span data-lang-label>AZ</span>
+          <svg width="10" height="10" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button data-lang="az" aria-current="true">Azərbaycanca</button>
+          <button data-lang="en">English</button>
+          <button data-lang="ru">Русский</button>
+        </div>
+      </div>
+      <a href="portal.html" class="btn btn-ghost btn-sm active" data-i18n="nav.portal">Müştəri Portalı</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.cta">Pulsuz məsləhət alın</a>
+      <button class="nav-toggle" aria-label="Menyu">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html">Ana səhifə</a><a href="about.html">Haqqımızda</a><a href="services.html">Xidmətlər</a>
+    <a href="calculators.html">Kalkulyatorlar</a><a href="pricing.html">Qiymətlər</a><a href="blog.html">Bloq</a>
+    <a href="contact.html">Əlaqə</a><a href="portal.html">Müştəri Portalı</a>
+  </div>
+</header>
+
+<div class="portal-wrap">
+  <div class="portal-card">
+    <div class="demo-note">🔒 Bu, Müştəri Portalının nümayiş interfeysidir. Standart və Premium paket müştəriləri üçün canlı sistemə giriş fəaliyyətə keçirildikdən sonra buradan istifadə ediləcək.</div>
+
+    <div class="portal-tabs">
+      <button class="active" data-pane="pane-login">Daxil ol</button>
+      <button data-pane="pane-register">Müraciət et</button>
+    </div>
+
+    <div class="portal-pane" id="pane-login">
+      <form id="portal-login-form">
+        <div class="field" style="margin-bottom:16px">
+          <label for="p-email">E-poçt</label>
+          <input type="email" id="p-email" required placeholder="siz@sirket.az">
+        </div>
+        <div class="field" style="margin-bottom:20px">
+          <label for="p-pass">Şifrə</label>
+          <input type="password" id="p-pass" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn.login">Daxil ol</button>
+        <p id="portal-msg" style="display:none;font-size:13px;color:var(--muted);margin-top:16px;line-height:1.5"></p>
+      </form>
+      <p style="text-align:center;font-size:13px;margin-top:20px;color:var(--muted)">Şifrənizi unutmusunuz? <a href="contact.html" style="color:var(--brass-dark);font-weight:600">Bizimlə əlaqə saxlayın</a></p>
+    </div>
+
+    <div class="portal-pane" id="pane-register" style="display:none">
+      <p style="font-size:14px;color:var(--muted);margin-bottom:20px">Hələ müştərimiz deyilsinizsə, portala giriş açmaq üçün əvvəlcə xidmət müqaviləsi bağlanmalıdır.</p>
+      <a href="contact.html" class="btn btn-primary btn-block">Pulsuz məsləhətə yazılın</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Apex MMC. <span data-i18n="footer.rights">Bütün hüquqlar qorunur.</span></span>
+      <span>VÖEN: 1234567890 · Lisenziya No. MF-0472</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
